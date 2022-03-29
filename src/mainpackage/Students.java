@@ -1,8 +1,8 @@
 package mainpackage;
 
  class Students extends Users {
-//etos, show grade, show avg grade, courses: courseid,coursename,etos grades:student antikeimeno,course antikeimeno, vathmo int
-	 //
+
+	
 	final int registrationNumber ;
 	
 	public Students(String name,String surname,String username,String department,int registrationNumber) {
@@ -10,15 +10,13 @@ package mainpackage;
 		this.registrationNumber=registrationNumber;
 	}
 	
-	/*public void make_student()
-	{
-	System.out.println("Prosthiki Mathiti");
+	public void Show_student() {
+		System.out.println("O Φοιτητής είναι ο  " + getName() );
 	}
 	
-	public void delete_student()
-	{
-	System.out.println("Diegrafh Mathiti");
-	}*/
+	public void Show_mitrwo() {
+		System.out.println("Αριθμός Μητρώου  " + registrationNumber );
+	}
 
 	public int getRegistrationNumber() {
 		return registrationNumber;

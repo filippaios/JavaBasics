@@ -9,7 +9,13 @@ package mainpackage;
 		this.mathimatos=mathimatos;
 	}
 	
+	public void Show_professor() {
+		System.out.println("O Καθηγητής είναι ο  " + getName() );
+	}
 	
+	public void Show_mathima() {
+		System.out.println("Διδάσκει  " + mathimatos );
+	}
 
 	public String getMathimatos() {
 		return mathimatos;

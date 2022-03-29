@@ -3,9 +3,6 @@ package mainpackage;
 public class Users {
 	
 	private String name;
-	
-	//login,logout,register
-
 	private String surname;
 	private String username;
 	private String department;
@@ -19,6 +16,11 @@ public class Users {
 		this.department=department;
 		this.usersCounter++;
 		
+	}
+	
+
+	void Show_User() {
+		System.out.println("O Χρήστης είναι ο  " + name );
 	}
 	
 	public String getName() {
