@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
+import java.io.*;
 
 public class CreateUsers {
 
@@ -110,6 +111,22 @@ public class CreateUsers {
 		Professors kathigitis = new Professors ("Γιώργος", "Φιλιππαίος", "filippaios", "Πληροφορικής", "java");
 		//Secreteries.
 		Secretaries grammateia = new Secretaries ("Κική", "Βουγιουκλάκη", "kiki", "Πληροφορικής");
+		
+		//9.1,   9.2
+		try{
+		    FileInputStream fstream = new FileInputStream("textfile.txt");
+		    DataInputStream in = new DataInputStream(fstream);
+		    BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		    String strLine;
+		    while ((strLine = br.readLine()) != null)   {
+		       String[] tokens = strLine.split(" ");
+		       int number = Integer.parseInt(tokens[4]);
+		       Students record = new Students(tokens[0],tokens[1],tokens[2],tokens[3],number);
+		    }
+		    in.close();
+		    } catch (Exception e){
+		      System.err.println("Kάτι πήγε Λάθος: " + e.getMessage());
+		    }
 
 	}
 
