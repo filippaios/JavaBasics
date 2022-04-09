@@ -47,7 +47,8 @@ public class CreateUsers {
 			}
 
 			Users xrhsths = new Users(name, surname, username, department);
-			xrhsths.Show_User();
+			System.out.println("Ο Χρήστης είναι ο " + xrhsths.getName() + "" + xrhsths.getSurname() + "Και ειναι στο"
+					+ xrhsths.getDepartment() + "τμήμα");
 
 		} catch (Exception e) {
 			System.out.println("General Exception occurred" + e);
@@ -114,7 +115,7 @@ public class CreateUsers {
 		
 		//9.1,   9.2
 		try{
-		    FileInputStream fstream = new FileInputStream("textfile.txt");
+		    FileInputStream fstream = new FileInputStream("/JavaBasics/src/mainpackage/Student.txt");
 		    DataInputStream in = new DataInputStream(fstream);
 		    BufferedReader br = new BufferedReader(new InputStreamReader(in));
 		    String strLine;

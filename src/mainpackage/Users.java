@@ -10,10 +10,10 @@ public class Users {
 
 	public Users(String name2, String surname2, String username2, String department2) {
 		
-		this.name=name;
-		this.surname=surname;
-		this.username=username;
-		this.department=department;
+		this.name=name2;
+		this.surname=surname2;
+		this.username=username2;
+		this.department=department2;
 		this.usersCounter++;
 		
 	}
