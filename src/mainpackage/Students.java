@@ -1,6 +1,8 @@
 package mainpackage;
 
- class Students extends Users {
+import java.util.List;
+
+class Students extends Users {
 
 	
 	final int registrationNumber ;
@@ -21,5 +23,11 @@ package mainpackage;
 	public int getRegistrationNumber() {
 		return registrationNumber;
 	}
+	// 10.2.1
+	public void emfanish_vathmologias(List<Professors> professorList, List<Courses> courseList) {
 
+		// sunarthsh gia na vlepoun oi foitites tis vatmologies
+		System.out.println("Εδω οι φοιτητες θα βλεπουν τις βαθμολογιεσ τους  " );
+		
+	}
 }

@@ -164,12 +164,19 @@ class Secretaries extends Users {
 		return lista_mathimatwn;
 
 	}
-	//10.1.2
+
+	// 10.1.2
 	public void Anathesh_mathimatos(List<Professors> professorList, List<Courses> courseList) {
-		
-		//sunarthsh gia anathesi mathimatwn
-		//mesw enos for kai katalilhs anazhths stis listes tha ginetai h anathesi
+
+		// sunarthsh gia anathesi mathimatwn
+		// mesw enos for kai katalilhs anazhths stis listes tha ginetai h anathesi
 	}
-	
+	// 10.1.3
+	public void vathmologish_foititwn(List<Students> lista_student) {
+
+		// sunarthsh gia vathmologish foithtwn
+		// pairnei thn lista kai kanei tis katalliles anatheseis
+
+	}
 
 }
