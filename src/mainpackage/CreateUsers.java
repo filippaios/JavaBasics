@@ -9,6 +9,8 @@ import java.util.Scanner;
 import java.io.*;
 
 public class CreateUsers {
+	
+	
 
 	public static void main(String[] args) {
 		
@@ -119,9 +121,13 @@ public class CreateUsers {
 		} finally {
 			System.out.println("H Εγγραφή του Φοιτητή τελείωσε!");
 		}
+		
+		//Courses
+		 Courses agglika = new Courses(0, "agglika", 3);
+		coursesList.add(agglika);
 
 		// PROFESSOR
-		Professors kathigitis = new Professors("Γιώργος", "Φιλιππαίος", "filippaios", "Πληροφορικής", "java");
+		Professors kathigitis = new Professors("Γιώργος", "Φιλιππαίος", "filippaios", "Πληροφορικής", agglika);
 		professorList.add(kathigitis);
 		
 		// Secreteries.
@@ -173,7 +179,8 @@ public class CreateUsers {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//10.0
 		
-		grammateia.Dimiourgia_kathigith(professorList);
+		grammateia.Dimiourgia_kathigith(professorList,coursesList);
+		grammateia.Dimiourgia_foithth(studentList);
 		
 		
 		

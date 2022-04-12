@@ -2,9 +2,9 @@ package mainpackage;
 
   class Professors extends Users {
 
-	public String mathimatos ;
+	public Courses mathimatos ;
 	
-	public Professors(String name,String surname,String username,String department, String mathimatos) {
+	public Professors(String name,String surname,String username,String department, Courses mathimatos) {
 		super(name,surname,username,department);
 		this.mathimatos=mathimatos;
 	}
@@ -17,11 +17,11 @@ package mainpackage;
 		System.out.println("Διδάσκει  " + mathimatos );
 	}
 
-	public String getMathimatos() {
+	public Courses getMathimatos() {
 		return mathimatos;
 	}
 
-	public void setMathimatos(String mathimatos) {
+	public void setMathimatos(Courses mathimatos) {
 		this.mathimatos = mathimatos;
 	}
 
