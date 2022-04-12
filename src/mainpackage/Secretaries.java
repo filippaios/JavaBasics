@@ -128,34 +128,48 @@ class Secretaries extends Users {
 		}
 		return lista_student;
 	}
-	
-	public List<Courses> Dimiourgia_mathimatos(List<Courses> lista_mathimatwn) throws Exception{
-		
-		System.out.println("Δώστε τον Κωδικό του Μαθήματος: ");
-		String course_id = input.nextLine();
-		if (course_id.matches("^[0-9]*$")) {
-		} else {
-			throw new Exception("o κωδικός δεν είναι σωστός");
-		}
-		
-		System.out.println("Δώστε το όνομα του Μαθήματος: ");
-		String onoma_mathimatos = input.nextLine();
-		if (onoma_mathimatos.matches("^[α-ωΑ-Ωa-zA-Z]*$")) {
 
-		} else {
-			throw new Exception("το όνομα  δεν είναι σωστό");
+	public List<Courses> Dimiourgia_mathimatos(List<Courses> lista_mathimatwn) {
+		try {
+
+			System.out.println("Δώστε τον Κωδικό του Μαθήματος: ");
+			String course_id = input.nextLine();
+			if (course_id.matches("^[0-9]*$")) {
+			} else {
+				throw new Exception("o κωδικός δεν είναι σωστός");
+			}
+
+			System.out.println("Δώστε το όνομα του Μαθήματος: ");
+			String onoma_mathimatos = input.nextLine();
+			if (onoma_mathimatos.matches("^[α-ωΑ-Ωa-zA-Z]*$")) {
+
+			} else {
+				throw new Exception("το όνομα  δεν είναι σωστό");
+			}
+
+			System.out.println("Δώστε το έτος του Μαθήματος: ");
+			String etos_mathimatos = input.nextLine();
+			if (etos_mathimatos.matches("^[0-9]*$")) {
+			} else {
+				throw new Exception("το έτος δεν είναι σωστό");
+			}
+
+			Courses neo_mathima = new Courses(Integer.parseInt(course_id), onoma_mathimatos,
+					Integer.parseInt(etos_mathimatos));
+			lista_mathimatwn.add(neo_mathima);
+
+		} catch (Exception e) {
+			System.out.println("General Exception occurred" + e);
 		}
-		
-		System.out.println("Δώστε το έτος του Μαθήματος: ");
-		String etos_mathimatos = input.nextLine();
-		if (course_id.matches("^[0-9]*$")) {
-		} else {
-			throw new Exception("το έτος δεν είναι σωστό");
-		}
-		
-		
-		
-		
+		return lista_mathimatwn;
+
 	}
+	//10.1.2
+	public void Anathesh_mathimatos(List<Professors> professorList, List<Courses> courseList) {
+		
+		//sunarthsh gia anathesi mathimatwn
+		//mesw enos for kai katalilhs anazhths stis listes tha ginetai h anathesi
+	}
+	
 
 }

@@ -181,7 +181,8 @@ public class CreateUsers {
 		
 		grammateia.Dimiourgia_kathigith(professorList,coursesList);
 		grammateia.Dimiourgia_foithth(studentList);
-		
+		grammateia.Dimiourgia_mathimatos(coursesList);
+		grammateia.Anathesh_mathimatos(professorList,coursesList);
 		
 		
 
