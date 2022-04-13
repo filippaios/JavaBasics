@@ -1,7 +1,7 @@
 package mainpackage;
-
+//дглиоуяциа йкасгс бахлым циа еяытгсг 6
 public class Grades {
-	
+	//ваяайтгяистийа йкасгс
 	Students foitiths ;
 	Courses mathima ;
 	int vathmos; 
@@ -11,11 +11,12 @@ public class Grades {
 		this.mathima = mathima;
 		this.vathmos = vathmos;
 	}
-	
+	//леходос циа елжамисг бахлоу
 	void Show_grade(Students foitiths , Courses mathima , int vathmos) {
 		System.out.println("Oi vathmoi tou" + foitiths + "gia to mathima" + mathima.getCoursename() + "einai" + vathmos);
 	}
-
+	
+	// GETTERS + SETTERS ваяайтгяистийым
 	public Students getFoitiths() {
 		return foitiths;
 	}

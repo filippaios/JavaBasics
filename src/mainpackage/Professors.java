@@ -1,18 +1,20 @@
 package mainpackage;
 
 import java.util.List;
-
+//ΔΗΜΙΟΥΡΓΙΑ ΚΛΑΣΗΣ ΕΡΩΤΗΜΑ 4
 class Professors extends Users {
-
+	//ΧΑΡΑΚΤΗΡΙΣΤΙΚΟ ΚΛΑΣΗΣ COURSES ΓΙΑ ΝΑ ΔΗΛΩΝΕΙ ΣΕ ΠΟΙΟ/Α ΜΑΘΗΜΑΤΑ ΕΙΝΑΙ Ο ΚΑΘΗΓΗΤΗΣ
 	public Courses mathimatos;
 
 	public Professors(String name, String surname, String username, String department, Courses mathimatos) {
+		//CONSTRUCTOR
 		super(name, surname, username, department);
 		this.mathimatos = mathimatos;
 	}
-
+	// ΜΕΘΟΔΟΣ ΓΙΑ ΕΜΦΑΝΙΣΗ ΚΑΘΗΓΗΤΗ
 	public void Show_professor() {
-		System.out.println("O Καθηγητής είναι ο  " + getName());
+		System.out.println("O Καθηγητής είναι ο  " + getName() + "Με επίθετο"
+				+ getSurname() +"Στο τμήμα" + getDepartment());
 	}
 
 	public void Show_mathima() {

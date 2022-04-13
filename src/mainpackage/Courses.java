@@ -1,7 +1,7 @@
 package mainpackage;
-
+//дглиоуяциа йкасгс циа еяытгла 6
 public class Courses {
-	
+	//ваяайтгяистийа лахглатос
 	private int courseid;
 	private String coursename;
 	private int etos ;
@@ -14,7 +14,7 @@ public class Courses {
 		this.etos = etos ;
 	}
 	
-	
+	//GETTERS + SETTERS
 	public int getCourseid() {
 		return courseid;
 	}

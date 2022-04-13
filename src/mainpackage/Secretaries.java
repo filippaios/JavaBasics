@@ -3,7 +3,7 @@ package mainpackage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//ΔΗΜΙΟΥΡΓΙΑ ΚΛΑΣΗΣ ΓΙΑ ΤΗΝ ΓΡΑΜΜΑΤΕΙΑ ΓΙΑ ΕΡΩΤΗΜΑ 5
 class Secretaries extends Users {
 
 	Scanner input = new Scanner(System.in);
@@ -13,9 +13,10 @@ class Secretaries extends Users {
 	}
 
 	public void Show_Grammateia() {
-		System.out.println("Εδώ ειναι λειτουργίες της Γραμματείας  ");
+		System.out.println("O/Η ΓΡΑΜΜΑΤΕΑΣ είναι ο/η  " + getName() + "Με επίθετο"
+				+ getSurname() +"Στο τμήμα" + getDepartment());
 	}
-
+//ΜΕΘΟΔΟΣ ΓΙΑ ΝΑ ΒΡΙΣΚΕΙ ΜΑΘΗΜΑ ΑΠΟ ΜΙΑ ΛΙΣΤΑ ΜΑΘΗΜΑΤΩΝ
 	public Courses findUsingEnhancedForLoop(String mathima_kathigiti, List<Courses> courseList) {
 
 		for (Courses cours : courseList) {
@@ -172,7 +173,7 @@ class Secretaries extends Users {
 		// mesw enos for kai katalilhs anazhths stis listes tha ginetai h anathesi
 	}
 	// 10.1.3
-	public void vathmologish_foititwn(List<Students> lista_student) {
+	public void vathmologish_foititwn(List<Students> lista_student,List<Grades> lista_vathmwn) {
 
 		// sunarthsh gia vathmologish foithtwn
 		// pairnei thn lista kai kanei tis katalliles anatheseis

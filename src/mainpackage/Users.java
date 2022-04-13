@@ -1,7 +1,7 @@
 package mainpackage;
-
+//ΔΗΜΙΟΥΡΓΙΑ ΚΛΑΣΗΣ USERS ΓΙΑ ΕΡΩΤΗΜΑ 2,1
 public class Users {
-	
+//ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ ΓΙΑ ΕΡΩΤΗΜΑ 2.1.1	
 	private String name;
 	private String surname;
 	private String username;
@@ -9,7 +9,7 @@ public class Users {
 	static int usersCounter=0;
 
 	public Users(String name2, String surname2, String username2, String department2) {
-		
+		//CONSTUCTOR ΓΙΑ ΕΡΩΤΗΜΑ 2.1.3
 		this.name=name2;
 		this.surname=surname2;
 		this.username=username2;
@@ -20,9 +20,12 @@ public class Users {
 	
 
 	void Show_User() {
-		System.out.println("O Χρήστης είναι ο  " + name );
+		System.out.println("O Χρήστης είναι ο  " + name + "-"+ surname + "-"+
+	username + "Στο τμήμα"+ department );
 	}
 	
+	
+	//ΜΕΘΟΔΟΙ GETTERS + SETTERS 2.1.2
 	public String getName() {
 		return name;
 	}

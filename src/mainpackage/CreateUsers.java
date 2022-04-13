@@ -7,22 +7,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.io.*;
-
+//ΔΗΜΙΟΥΡΓΙΑ ΚΛΑΣΗΣ ΓΙΑ ΕΡΩΤΗΜΑ 7,1
 public class CreateUsers {
 	
 	
 
 	public static void main(String[] args) {
-		
-		 List<Users> userList = new ArrayList<Users>();		
-		 List<Students> studentList = new ArrayList<Students>();
-		 List<Secretaries> secretariesList = new ArrayList<Secretaries>();
-		 List<Professors> professorList = new ArrayList<Professors>();
-		 List<Grades> gradeList = new ArrayList<Grades>();
-		 List<Courses> coursesList = new ArrayList<Courses>(); 
+		//ΛΙΣΤΕΣ ΜΕ ΑΝΤΙΚΕΙΜΕΝΑ
+		 List<Users> lista_xrhstwn = new ArrayList<Users>();		
+		 List<Students> lista_foititwn = new ArrayList<Students>();
+		 List<Secretaries> lista_gramateias = new ArrayList<Secretaries>();
+		 List<Professors> lista_kathigitwn = new ArrayList<Professors>();
+		 List<Grades> lista_vathmwn = new ArrayList<Grades>();
+		 List<Courses> lista_mathimatwn = new ArrayList<Courses>(); 
 		 
 
-		// USER
+		// ΔΗΜΙΟΥΡΓΙΑ USER ΜΕΣΩ ΜΕΣΩ SCANNER ΚΑΙ TRY-CATCH. ΕΡΩΤΗΜΑ 7.1
 		Scanner input = new Scanner(System.in);
 		try {
 
@@ -59,9 +59,9 @@ public class CreateUsers {
 			}
 
 			Users xrhsths = new Users(name, surname, username, department);
-			userList.add(xrhsths);
-			System.out.println("Ο Χρήστης είναι ο " + xrhsths.getName() + "" + xrhsths.getSurname() + "Και ειναι στο"
-					+ xrhsths.getDepartment() + "τμήμα");
+			lista_xrhstwn.add(xrhsths);
+			//ΕΜΦΑΝΙΣΗ ΧΡΗΣΤΗ ΓΙΑ ΕΡΩΤΗΜΑ 7.2
+			xrhsths.Show_User();
 
 		} catch (Exception e) {
 			System.out.println("General Exception occurred" + e);
@@ -69,7 +69,9 @@ public class CreateUsers {
 			System.out.println("H Εγγραφή του Χρήστη τελείωσε!");
 		}
 
-		// STUDENT
+		// ΔΗΜΙΟΥΡΓΙΑ STUDENT ΜΕΣΩ ΜΕΣΩ SCANNER ΚΑΙ TRY-CATCH. ΕΡΩΤΗΜΑ 7.1
+		//TRY-CATCH ΓΙΑ ΕΡΩΤΗΜΑ 8.1
+		//ΜΕ ΤΙΣ ΜΕΘΟΔΟΥΣ SHOW ΤΗΣ ΕΚΑΣΤΟΤΕ ΚΛΑΣΗΣ ΓΙΝΕΤΑΙ ΕΜΦΑΝΙΣΗ ΤΩΝ ΧΑΡΑΚΤΗΡΙΣΤΙΚΩΝ
 		try {
 
 			System.out.println("Δώστε το όνομα του Φοιτητή: ");
@@ -113,8 +115,11 @@ public class CreateUsers {
 
 			Students foithths = new Students(names_student, surname_student, username_student, department_student,
 					Integer.parseInt(registrationNumber));
-			foithths.Show_User();
-			studentList.add(foithths);
+			//ΕΜΦΑΝΙΣΗ ΦΟΙΤΗΤΗ ΕΡΩΤΗΜΑ 7.2
+		    foithths.Show_student();
+			lista_foititwn.add(foithths); //ΠΡΟΣΘΗΚΗ ΦΟΙΤΗΤΗ ΣΤΗΝ ΛΙΣΤΑ ΦΟΙΤΗΤΩΝ
+			
+			foithths.emfanish_vathmologias(lista_foititwn, lista_vathmwn); //ΕΡΩΤΗΜΑ 10,2,1. ΕΜΦΑΝΙΣΗ ΒΑΘΜΟΛΟΓΙΩΝ
 
 		} catch (Exception e) {
 			System.out.println("General Exception occurred" + e);
@@ -122,19 +127,22 @@ public class CreateUsers {
 			System.out.println("H Εγγραφή του Φοιτητή τελείωσε!");
 		}
 		
-		//Courses
+		//ΔΗΜΙΟΥΡΓΙΑ ΕΝΟΣ ΜΑΘΗΜΑΤΟΣ ΚΑΙ ΕΙΣΑΓΩΓΗ ΤΟΥ ΣΤΗΝ ΛΙΣΤΑ
 		 Courses agglika = new Courses(0, "agglika", 3);
-		coursesList.add(agglika);
+		lista_mathimatwn.add(agglika);
 
-		// PROFESSOR
+		// ΔΗΜΙΟΥΡΓΙΑ ΕΝΟΣ ΚΑΘΗΓΗΤΗ ΚΑΙ ΕΙΣΑΓΩΓΗ ΣΤΗΝ ΛΙΣΤΑ ΕΡΩΤΗΜΑ 7.1
 		Professors kathigitis = new Professors("Γιώργος", "Φιλιππαίος", "filippaios", "Πληροφορικής", agglika);
-		professorList.add(kathigitis);
+		lista_kathigitwn.add(kathigitis);
+		kathigitis.Show_professor(); //ΕΜΦΑΝΙΣΗ ΓΙΑ ΕΡΩΤΗΜΑ 7.2
 		
-		// Secreteries.
+		// ΔΗΜΙΟΥΡΓΙΑ ΕΝΟΣ ΓΡΑΜΜΑΤΕΆ ΚΑΙ ΕΙΣΑΓΩΓΗ ΣΤΗΝ ΛΙΣΤΑ ΕΡΩΤΗΜΑ 7.1
 		Secretaries grammateia = new Secretaries("Κική", "Βουγιουκλάκη", "kiki", "Πληροφορικής");
-		secretariesList.add(grammateia);
+		lista_gramateias.add(grammateia);
+		grammateia.Show_Grammateia(); //ΕΜΦΑΝΙΣΗ ΓΙΑ ΕΡΩΤΗΜΑ 7.2
 		
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//ΕΝΤΟΛΕΣ ΓΙΑ ΤΑ ΕΡΩΤΗΜΑΤΑ 9 ΚΑΘΩΣ ΚΑΙ TRY CATCH ΓΙΑ ΕΡΩΤΗΜΑ 9.3
 		// 9.1, 9.2
 		try {
 			FileInputStream fstream = new FileInputStream("/src/mainpackage/Student.txt");
@@ -177,12 +185,15 @@ public class CreateUsers {
 		}
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//10.0
+		// ΕΝΤΟΛΕΣ ΓΙΑ ΕΡΩΤΗΜΑΤΑ ΣΤΗΝ ΠΑΡΑΓΡΑΦΟ 10.0
 		
-		grammateia.Dimiourgia_kathigith(professorList,coursesList);
-		grammateia.Dimiourgia_foithth(studentList);
-		grammateia.Dimiourgia_mathimatos(coursesList);
-		grammateia.Anathesh_mathimatos(professorList,coursesList);
+		grammateia.Dimiourgia_kathigith(lista_kathigitwn,lista_mathimatwn); //10.1.1
+		grammateia.Dimiourgia_foithth(lista_foititwn);  //10,1,1
+		grammateia.Dimiourgia_mathimatos(lista_mathimatwn); //10,1,1
+		grammateia.Anathesh_mathimatos(lista_kathigitwn,lista_mathimatwn);  //10,1,2
+		grammateia.vathmologish_foititwn(lista_foititwn,lista_vathmwn); //10,1,3
+		
+		kathigitis.emfanish_vathmologias(lista_foititwn, lista_mathimatwn); //10,3,1 
 		
 		
 
