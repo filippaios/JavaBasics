@@ -168,13 +168,13 @@ class Secretaries extends Users {
 
 	// 10.1.2
 	public void Anathesh_mathimatos(List<Professors> professorList, List<Courses> courseList) {
-
+		System.out.println("Εδώ θα γινεται η ανάθεση μαθήματος");
 		// sunarthsh gia anathesi mathimatwn
 		// mesw enos for kai katalilhs anazhths stis listes tha ginetai h anathesi
 	}
 	// 10.1.3
 	public void vathmologish_foititwn(List<Students> lista_student,List<Grades> lista_vathmwn) {
-
+		System.out.println("Εδώ θα γινεται η βαθμολογιση φοιτητών");
 		// sunarthsh gia vathmologish foithtwn
 		// pairnei thn lista kai kanei tis katalliles anatheseis
 
