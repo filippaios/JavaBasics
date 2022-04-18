@@ -36,6 +36,14 @@ class Professors extends Users {
 		System.out.println("Εδω ο καθηγητης θα βαθμολογει τα μαθηματα που του εχουν ανατεθει");
 
 	}
+	
+	// 10.3.2
+		public void emfanish_vathmou_gia_mathima(List<Students> lista_student, List<Courses> courseList) {
+
+			// μέθοδος που προοριζεται για να γινεται εμφανιση βαθμων μονο οσως μαθηματων διδάσκει ο εκαστοτε καθηγητής
+			System.out.println("μέθοδος που προοριζεται για να γινεται εμφανιση βαθμων μονο οσως μαθηματων διδάσκει ο εκαστοτε καθηγητής");
+
+		}
 
 	
 
