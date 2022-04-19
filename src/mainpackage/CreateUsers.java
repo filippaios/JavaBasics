@@ -145,7 +145,7 @@ public class CreateUsers {
 		//ΕΝΤΟΛΕΣ ΓΙΑ ΤΑ ΕΡΩΤΗΜΑΤΑ 9 ΚΑΘΩΣ ΚΑΙ TRY CATCH ΓΙΑ ΕΡΩΤΗΜΑ 9.3
 		// 9.1, 9.2..
 		try {
-			FileInputStream fstream = new FileInputStream("/src/mainpackage/Student.txt");
+			FileInputStream fstream = new FileInputStream("src/Student2.txt");
 			DataInputStream in = new DataInputStream(fstream);
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String strLine;
@@ -154,14 +154,17 @@ public class CreateUsers {
 				int number = Integer.parseInt(tokens[4]);
 
 				if ((tokens[0].matches("^[α-ωΑ-Ωa-zA-Z]*$"))) {
+					
 				} else {
 					throw new Exception("το όνομα δεν είναι σωστό");
 				}
 				if ((tokens[1].matches("^[α-ωΑ-Ωa-zA-Z]*$"))) {
+					
 				} else {
 					throw new Exception("το επίθετο δεν είναι σωστό");
 				}
 				if ((tokens[2].matches("^[α-ωΑ-Ωa-zA-Z]*$"))) {
+				
 				} else {
 					throw new Exception("το username δεν είναι σωστό");
 				}
