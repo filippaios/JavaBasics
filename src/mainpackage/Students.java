@@ -15,8 +15,8 @@ class Students extends Users {
 	
 	//ΕΡΩΤΗΜΑ 3.3. ΜΕΘΟΔΟΣ ΓΙΑ ΝΑ ΕΜΦΑΝΙΖΟΝΤΑΙ ΟΙ ΦΟΙΤΗΤΕΣ
 	public void Show_student() {
-		System.out.println("O Φοιτητής είναι ο  " + getName() + "Με επίθετο"
-				+ getSurname() +"Στο τμήμα" + getDepartment());
+		System.out.println("O Φοιτητής είναι ο  "+" " + getName() +" "+ "Με επίθετο"+" "
+				+ getSurname() +"Στο τμήμα"+" " + getDepartment());
 	}
 	
 	public void Show_mitrwo() {

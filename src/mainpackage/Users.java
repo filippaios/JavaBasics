@@ -20,8 +20,8 @@ public class Users {
 	
 
 	void Show_User() {
-		System.out.println("O Χρήστης είναι ο  " + name + "-"+ surname + "-"+
-	username + "Στο τμήμα"+ department );
+		System.out.println("O Χρήστης είναι ο  "+ " " + name + "  "+ surname + "  "+
+	username + "Στο τμήμα"+" "+ department);
 	}
 	
 	

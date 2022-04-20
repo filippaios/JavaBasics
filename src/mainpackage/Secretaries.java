@@ -13,8 +13,8 @@ class Secretaries extends Users {
 	}
 
 	public void Show_Grammateia() {
-		System.out.println("O/Η ΓΡΑΜΜΑΤΕΑΣ είναι ο/η  " + getName() + "Με επίθετο"
-				+ getSurname() +"Στο τμήμα" + getDepartment());
+		System.out.println("O/Η ΓΡΑΜΜΑΤΕΑΣ είναι ο/η " +" " + getName()+" " + "Με επίθετο"+" "
+				+ getSurname()+" " +"Στο τμήμα"+" " + getDepartment());
 	}
 //ΜΕΘΟΔΟΣ ΓΙΑ ΝΑ ΒΡΙΣΚΕΙ ΜΑΘΗΜΑ ΑΠΟ ΜΙΑ ΛΙΣΤΑ ΜΑΘΗΜΑΤΩΝ
 	public Courses findUsingEnhancedForLoop(String mathima_kathigiti, List<Courses> courseList) {

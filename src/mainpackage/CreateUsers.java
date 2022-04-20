@@ -137,7 +137,7 @@ public class CreateUsers {
 		kathigitis.Show_professor(); //ΕΜΦΑΝΙΣΗ ΓΙΑ ΕΡΩΤΗΜΑ 7.2
 		
 		// ΔΗΜΙΟΥΡΓΙΑ ΕΝΟΣ ΓΡΑΜΜΑΤΕΆ ΚΑΙ ΕΙΣΑΓΩΓΗ ΣΤΗΝ ΛΙΣΤΑ ΕΡΩΤΗΜΑ 7.1
-		Secretaries grammateia = new Secretaries("Κική", "Βουγιουκλάκη", "kiki", "Πληροφορικής");
+		Secretaries grammateia = new Secretaries("ΣΩΤΗΡΗΣ", "ΦΙΛΙΠΠΙΔΗΣ", "SOT", "ΠΛΗΡΟΦΟΡΙΚΗΣ");
 		lista_gramateias.add(grammateia);
 		grammateia.Show_Grammateia(); //ΕΜΦΑΝΙΣΗ ΓΙΑ ΕΡΩΤΗΜΑ 7.2
 		
@@ -180,7 +180,7 @@ public class CreateUsers {
 				
 
 				Students record = new Students(tokens[0], tokens[1], tokens[2], tokens[3], number);
-				System.out.println("H Εγγραφή του Φοιτητή τελείωσε!" + record.getRegistrationNumber());
+				System.out.println("H Εγγραφή του Φοιτητή Μέσω αρχείου .ΤΧΤ τελείωσε!"+" " + record.getRegistrationNumber());
 			}
 			in.close();
 		} catch (Exception e) {
@@ -189,7 +189,7 @@ public class CreateUsers {
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// ΕΝΤΟΛΕΣ ΓΙΑ ΕΡΩΤΗΜΑΤΑ ΣΤΗΝ ΠΑΡΑΓΡΑΦΟ 10.0
-		
+		System.out.println("ΣΤΗΝ ΣΥΝΕΧΕΙΑ ΕΚΤΕΛΕΙΤΑΙ SCANNER ΑΠΟ ΤΗΝ ΓΡΑΜΜΑΤΕΙΑ ΓΙΑ ΤΑ ΕΡΩΤΗΜΑΤΑ ΣΤΑ ΒΗΜΑΤΑ ΤΗΣ ΑΣΚΗΣΗ 10 ΚΑΙ ΚΑΤΩ\n");
 		grammateia.Dimiourgia_kathigith(lista_kathigitwn,lista_mathimatwn); //10.1.1
 		grammateia.Dimiourgia_foithth(lista_foititwn);  //10,1,1
 		grammateia.Dimiourgia_mathimatos(lista_mathimatwn); //10,1,1

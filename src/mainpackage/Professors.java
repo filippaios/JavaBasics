@@ -13,8 +13,8 @@ class Professors extends Users {
 	}
 	// ΜΕΘΟΔΟΣ ΓΙΑ ΕΜΦΑΝΙΣΗ ΚΑΘΗΓΗΤΗ
 	public void Show_professor() {
-		System.out.println("O Καθηγητής είναι ο  " + getName() + "Με επίθετο"
-				+ getSurname() +"Στο τμήμα" + getDepartment());
+		System.out.println("O Καθηγητής είναι ο  "+" " + getName()+" " + "Με επίθετο"+" "
+				+ getSurname()+" " +"Στο τμήμα"+" " + getDepartment());
 	}
 
 	public void Show_mathima() {
